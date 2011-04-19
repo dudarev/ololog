@@ -1,5 +1,13 @@
 *.swp
 *.pyc
-app/distlib/*
-.installed.cfg
-app/config.py
+src/app/distlib/*
+src/.installed.cfg
+src/app/config.py
+src/.installed.cfg
+src/app/distlib/*
+src/app/lib/*
+src/etc/*
+src/eggs/*
+src/var/*
+src/bin/*
+temp
