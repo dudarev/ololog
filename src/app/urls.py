@@ -9,5 +9,5 @@ rules = [
     Rule('/auth', name='auth', handler='multi_auth.handlers.AuthHandler'),
     Rule('/auth/logout', name='auth-logout', handler='multi_auth.handlers.LogoutHandler'),
     Rule('/auth/google', name='auth-google', handler='multi_auth.handlers.GoogleAuthHandler'),
-    Rule('/auth/twitter', name='auth-twitter', handler='multi_auth.handlers.TwitterAuthHandler'),
+    Rule('/auth/twitter/', name='auth-twitter', handler='multi_auth.handlers.TwitterAuthHandler'),
 ]

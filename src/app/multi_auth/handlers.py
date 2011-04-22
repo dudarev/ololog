@@ -71,25 +71,13 @@ class TwitterAuthHandler(AuthRequestHandler, TwitterMixin):
         url = self.redirect_path() 
         if not user: 
             self.session_store.delete_cookie('_oauth_request_token') 
-            if self.should_retry(3): 
-                return self.authenticate_redirect() 
-            else: 
-                return self.abort(403) 
+            return self.abort(403) 
         else: 
             auth_id = 'twitter|%s' % user['username'] 
             self.auth.login_with_auth_id(auth_id, True) 
             if not self.auth.user: 
                 self.auth.create_user(username=user['username'], auth_id=auth_id, type='twitter') 
-                self.success_msg(_('You are now registered. Welcome!'), life=5, flash=True)
         return self.redirect(url) 
-
-    def should_retry(self, times): 
-        retry = 0 
-        if '_retry' in self.session: 
-            retry = int(self.session.pop('_retry')) 
-        retry += 1 
-        self.session['_retry'] = retry 
-        return retry <= int(times) 
 
 
 class GoogleAuthHandler(AuthRequestHandler, GoogleMixin):
