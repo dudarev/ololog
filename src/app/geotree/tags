@@ -1,0 +1,101 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+GeoTree	geotree.py	/^class GeoTree(db.Model):$/;"	c
+Geohash	geohash.py	/^class Geohash (Geostring):$/;"	c
+Geohash	geohash_extended.py	/^class Geohash (Geostring):$/;"	c
+GeomathTests	geomath_test.py	/^class GeomathTests(unittest.TestCase):$/;"	c
+Geostring	geohash.py	/^class Geostring (object):$/;"	c
+Geostring	geohash_extended.py	/^class Geostring (object):$/;"	c
+Point	geotree.py	/^class Point(db.Model):$/;"	c
+SortedListTest	sorted_lists_test.py	/^class SortedListTest(unittest.TestCase):$/;"	c
+SortedPointsList	sorted_lists_test.py	/^class SortedPointsList(unittest.TestCase):$/;"	c
+SortedPointsListLimited	sorted_lists_test.py	/^class SortedPointsListLimited(unittest.TestCase):$/;"	c
+SortedSetTest	sorted_lists_test.py	/^class SortedSetTest(unittest.TestCase):$/;"	c
+SortedTilesSetTest	sorted_lists_test.py	/^class SortedTilesSetTest(unittest.TestCase):$/;"	c
+Tile	geotree.py	/^class Tile(db.Model):$/;"	c
+__init__	geohash_extended.py	/^    def __init__ (self, data, bound=(-180,-90,180,90), depth=24):$/;"	m	class:Geostring
+__init__	sorted_lists.py	/^    def __init__(self,l):$/;"	m	class:sorted_points_list
+__init__	sorted_lists.py	/^    def __init__(self,l):$/;"	m	class:sorted_tiles_set
+__init__	sorted_lists.py	/^    def __init__(self,l,len_max=5):$/;"	m	class:sorted_points_list_limited
+__init__	sorted_lists.py	/^    def __init__(self,l,sort_func = cmp):$/;"	m	class:sorted_list
+__init__	sorted_lists.py	/^    def __init__(self,l,sort_func = cmp):$/;"	m	class:sorted_set
+__repr__	geotree.py	/^    def __repr__(self):$/;"	m	class:Tile	file:
+__str__	geohash_extended.py	/^    def __str__ (self):$/;"	m	class:Geostring	file:
+_cmp_points	sorted_lists.py	/^    def _cmp_points(p1,p2):$/;"	m	class:sorted_points_list
+_cmp_tiles	sorted_lists.py	/^    def _cmp_tiles(t1,t2):$/;"	m	class:sorted_tiles_set
+_get_tile_numbers	sorted_lists.py	/^    def _get_tile_numbers(t):$/;"	m	class:sorted_tiles_set
+_to_bbox	geohash_extended.py	/^    def _to_bbox (self, bits):$/;"	m	class:Geostring
+_to_bits	geohash.py	/^    def _to_bits (cls,f,depth=24):$/;"	m	class:Geostring
+_to_bits	geohash_extended.py	/^    def _to_bits (cls,f,depth=24):$/;"	m	class:Geostring
+bbox	geohash_extended.py	/^    def bbox (self, prefix=None):$/;"	m	class:Geostring
+bbox	geohash_extended.py	/^    def bbox (self,prefix=None):$/;"	m	class:Geohash
+bitstring	geohash.py	/^    def bitstring (cls,(x,y),bound=(-180,-90,180,90),depth=24):$/;"	m	class:Geostring
+bitstring	geohash.py	/^    def bitstring (cls,coord,bound=(-180,-90,180,90),depth=24):$/;"	m	class:Geohash
+bitstring	geohash_extended.py	/^    def bitstring (cls,(x,y),bound=(-180,-90,180,90),depth=24):$/;"	m	class:Geostring
+bitstring	geohash_extended.py	/^    def bitstring (cls,coord,bound=(-180,-90,180,90),depth=24):$/;"	m	class:Geohash
+can_take_str	geomath.py	/^def can_take_str(f):$/;"	f
+decode	geohash_extended.py	/^def decode(hash):$/;"	f
+encode	geohash.py	/^def encode(lat,lon):$/;"	f
+encode	geohash_extended.py	/^def encode(lat,lon):$/;"	f
+encode_coord_str	geohash.py	/^def encode_coord_str(coord_str):$/;"	f
+exists	geotree.py	/^    def exists(gt_key_name=None):$/;"	m	class:GeoTree
+extend	sorted_lists.py	/^    def extend(self,items):$/;"	m	class:sorted_list
+f_with_args_converted	geomath.py	/^    def f_with_args_converted(*args,**kwargs):$/;"	f	function:can_take_str
+fetch_around_tile	geotree.py	/^    def fetch_around_tile(tile_center_str):$/;"	m	class:GeoTree
+get	geotree.py	/^    def get(gt_key_name=None):$/;"	m	class:GeoTree
+insert	sorted_lists.py	/^    def insert(self,item):$/;"	m	class:sorted_list
+insert	sorted_lists.py	/^    def insert(self,item):$/;"	m	class:sorted_set
+insert	sorted_lists.py	/^    def insert(self,point):$/;"	m	class:sorted_points_list_limited
+insert_points_list	geotree.py	/^    def insert_points_list(cls, points_list, gt_key_name=None):$/;"	m	class:GeoTree
+insert_to_tile	geotree.py	/^    def insert_to_tile(self):$/;"	m	class:Point
+lat_lon_to_tile	geomath.py	/^def lat_lon_to_tile(lat,lon,z):$/;"	f
+point	geohash_extended.py	/^    def point (self,prefix=None):$/;"	m	class:Geostring
+remove	sorted_lists.py	/^    def remove(self,*args):$/;"	m	class:sorted_tiles_set
+remove_point_by_key_name	geotree.py	/^    def remove_point_by_key_name(cls, key_name, gt_key_name=None):$/;"	m	class:GeoTree
+setUp	sorted_lists_test.py	/^    def setUp(self):$/;"	m	class:SortedListTest
+setUp	sorted_lists_test.py	/^    def setUp(self):$/;"	m	class:SortedPointsList
+setUp	sorted_lists_test.py	/^    def setUp(self):$/;"	m	class:SortedPointsListLimited
+setUp	sorted_lists_test.py	/^    def setUp(self):$/;"	m	class:SortedSetTest
+setUp	sorted_lists_test.py	/^    def setUp(self):$/;"	m	class:SortedTilesSetTest
+sort	sorted_lists.py	/^    def sort(self):$/;"	m	class:sorted_list
+sorted_list	sorted_lists.py	/^class sorted_list(list):$/;"	c
+sorted_points_list	sorted_lists.py	/^class sorted_points_list(sorted_list):$/;"	c
+sorted_points_list_limited	sorted_lists.py	/^class sorted_points_list_limited(sorted_points_list):$/;"	c
+sorted_set	sorted_lists.py	/^class sorted_set(sorted_list):$/;"	c
+sorted_tiles_set	sorted_lists.py	/^class sorted_tiles_set(sorted_set):$/;"	c
+test_extension	sorted_lists_test.py	/^    def test_extension(self):$/;"	m	class:SortedListTest
+test_extension	sorted_lists_test.py	/^    def test_extension(self):$/;"	m	class:SortedSetTest
+test_extension	sorted_lists_test.py	/^    def test_extension(self):$/;"	m	class:SortedTilesSetTest
+test_initialization	sorted_lists_test.py	/^    def test_initialization(self):$/;"	m	class:SortedListTest
+test_initialization	sorted_lists_test.py	/^    def test_initialization(self):$/;"	m	class:SortedPointsList
+test_initialization	sorted_lists_test.py	/^    def test_initialization(self):$/;"	m	class:SortedPointsListLimited
+test_initialization	sorted_lists_test.py	/^    def test_initialization(self):$/;"	m	class:SortedSetTest
+test_initialization	sorted_lists_test.py	/^    def test_initialization(self):$/;"	m	class:SortedTilesSetTest
+test_insert_to_empty	sorted_lists_test.py	/^    def test_insert_to_empty(self):$/;"	m	class:SortedListTest
+test_insert_to_empty	sorted_lists_test.py	/^    def test_insert_to_empty(self):$/;"	m	class:SortedSetTest
+test_insertion	sorted_lists_test.py	/^    def test_insertion(self):$/;"	m	class:SortedListTest
+test_insertion	sorted_lists_test.py	/^    def test_insertion(self):$/;"	m	class:SortedPointsList
+test_insertion	sorted_lists_test.py	/^    def test_insertion(self):$/;"	m	class:SortedPointsListLimited
+test_insertion	sorted_lists_test.py	/^    def test_insertion(self):$/;"	m	class:SortedSetTest
+test_insertion	sorted_lists_test.py	/^    def test_insertion(self):$/;"	m	class:SortedTilesSetTest
+test_lat_lon_to_tile	geomath_test.py	/^    def test_lat_lon_to_tile(self):$/;"	m	class:GeomathTests
+test_removal	sorted_lists_test.py	/^    def test_removal(self):$/;"	m	class:SortedTilesSetTest
+test_sort_func	sorted_lists_test.py	/^    def test_sort_func(self):$/;"	m	class:SortedListTest
+test_sort_func	sorted_lists_test.py	/^    def test_sort_func(self):$/;"	m	class:SortedSetTest
+test_tile_children	geomath_test.py	/^    def test_tile_children(self):$/;"	m	class:GeomathTests
+test_tile_children_str	geomath_test.py	/^    def test_tile_children_str(self):$/;"	m	class:GeomathTests
+test_tile_parent	geomath_test.py	/^    def test_tile_parent(self):$/;"	m	class:GeomathTests
+test_tile_parent_str	geomath_test.py	/^    def test_tile_parent_str(self):$/;"	m	class:GeomathTests
+test_tile_str_to_tuple	geomath_test.py	/^    def test_tile_str_to_tuple(self):$/;"	m	class:GeomathTests
+test_tile_tuple_to_str	geomath_test.py	/^    def test_tile_tuple_to_str(self):$/;"	m	class:GeomathTests
+tile_children	geomath.py	/^def tile_children(*args,**kwargs):$/;"	f
+tile_parent	geomath.py	/^def tile_parent(*args,**kwargs):$/;"	f
+tile_str_to_tuple	geomath.py	/^def tile_str_to_tuple(s):$/;"	f
+tile_tuple_to_str	geomath.py	/^def tile_tuple_to_str(t):$/;"	f
+union	geohash_extended.py	/^    def union (self,other):$/;"	m	class:Geostring
+update_tile	geotree.py	/^    def update_tile(tile_str, children_updated_list, gt_key_name=None):$/;"	m	class:GeoTree
+update_tiles	geotree.py	/^    def update_tiles(cls, count=config.COUNT_UPDATE, gt_key_name=None):$/;"	m	class:GeoTree

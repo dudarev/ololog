@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Cities and OpenStreetMap Demo</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link href="/css/main.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src= "http://www.google.com/jsapi"> </script> 
+    <script type="text/javascript"> google.load("jquery", "1.3.2"); </script> 
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="/js/google-maps-v3-samples.js"></script>
+    <script type="text/javascript" src="/js/map.js"></script>
+</head>
+
+<body id="index" class="home" onload="initialize_map()">
+
+    <div id="top_bar">
+        <div id="header" class="container">
+            <h1 class="main-title">Cities and OpenStreetMap Demo</h1>
+        </div>
+    </div>
+
+    <div id="content" class="container">
+        
+        <div id="map_container"> 
+            <div id="map_canvas"></div> 
+        </div> 
+
+        <div id="sidebar">
+
+            <div id="geocode_container">
+                <input type='text' onkeypress='geocodeOnEnter(event)' id='city-field' value='' title='City/Address'/> 
+                <div class="input-buttons"> 
+                    <input type='button' value='Go' onclick='geocodeCity()'/> 
+                </div> 
+            </div>
+
+            <div id="marker_info"> 
+            </div> 
+
+            <div id="attr_container"> 
+            </div> 
+
+            <div id="update_info"> 
+            </div> 
+
+        </div>
+
+        <div id="description">
+            <p>
+            This demo is for two GeoTrees with different maximum and minimum zooms. Cities - 2-10, OSM POIs 11-17.
+            </p>
+            <p>
+            Follow instructions in utils/README to upload data and turn on downloading from OSM.
+            </p>
+            <p>
+            Downloading POIs from OSM may be turned on and off. See <a href="http://localhost:8080/admin">http://localhost:8080/admin</a>.
+            </p>
+        </div>
+
+    </div> <!-- content -->
+
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+             $("#update_osm_button").attr("disabled","disabled");
+        });
+    </script> 
+
+</body>
+</html>

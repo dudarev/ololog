@@ -49,6 +49,12 @@ handlers:
   static_files: templates/map.html
   upload: templates/map.html
 
+- url: /gt/admin.*
+  script: geotree_admin.py
+
+- url: /gt.*
+  script: geotree_handlers.py
+
 - url: /_ah/queue/deferred
   script: main.py
   login: admin
