@@ -159,15 +159,17 @@ function attachInfoDiv(marker,i){
             var attr_data = '';
 
             if (points_data[i]['name']){
-                info_window.content = '<div id="info_window_holder"><a href="/p/'+points_data[i]['key_name']+'"><span key_name="'+points_data[i]['key_name']+'" id="place_name">'+points_data[i]['name']+'</span></a>';
+                // info_window.content = '<div id="info_window_holder"><a href="/p/'+points_data[i]['key_name']+'"><span key_name="'+points_data[i]['key_name']+'" id="place_name">'+points_data[i]['name']+'</span></a>';
+                $("#place-title-holder").text(points_data[i]['name']);
                 } else {
-                info_window.content = '<div id="info_window_holder"><a href="/p/'+points_data[i]['key_name']+'"><span key_name="'+points_data[i]['key_name']+'" id="place_name">'+points_data[i]['key_name']+'</span></a>';
+                // info_window.content = '<div id="info_window_holder"><a href="/p/'+points_data[i]['key_name']+'"><span key_name="'+points_data[i]['key_name']+'" id="place_name">'+points_data[i]['key_name']+'</span></a>';
+                $("#place-title-holder").text(points_data[i]['key_name']);
                 }
             info_window.content += '<br/><span id="attr_data"></span>';
             info_window.content += "<br/><br/><br/><input type='button' id='up_button' value='Up' onclick='upPlace()'/>";
             info_window.content += "&nbsp;&nbsp;&nbsp;&nbsp;<input type='button' id='down_button' value='Down' onclick='downPlace()'/>";
             info_window.content += "</div>";
-            info_window.open(map,marker);
+            // info_window.open(map,marker);
             connect_marker = marker;
             
             url = '/p/'+points_data[i]['key_name'];
