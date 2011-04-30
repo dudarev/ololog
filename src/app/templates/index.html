@@ -1,4 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <ul>
+        {% for c in checkins %}
+        <li>
+        {{ c.user.username }}
+        @
+        {% if c.place_name %}
+        {{ c.place_name }}
+        {% else %}
+        {{ c.place_key_name }}
+        {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
 {% endblock %}
