@@ -161,9 +161,11 @@ function attachInfoDiv(marker,i){
             if (points_data[i]['name']){
                 // info_window.content = '<div id="info_window_holder"><a href="/p/'+points_data[i]['key_name']+'"><span key_name="'+points_data[i]['key_name']+'" id="place_name">'+points_data[i]['name']+'</span></a>';
                 $("#place-title-holder").text(points_data[i]['name']);
+                $("#place-title-holder").attr('key_name', points_data[i]['key_name']);
                 } else {
                 // info_window.content = '<div id="info_window_holder"><a href="/p/'+points_data[i]['key_name']+'"><span key_name="'+points_data[i]['key_name']+'" id="place_name">'+points_data[i]['key_name']+'</span></a>';
                 $("#place-title-holder").text(points_data[i]['key_name']);
+                $("#place-title-holder").attr('key_name', points_data[i]['key_name']);
                 }
             info_window.content += '<br/><span id="attr_data"></span>';
             info_window.content += "<br/><br/><br/><input type='button' id='up_button' value='Up' onclick='upPlace()'/>";

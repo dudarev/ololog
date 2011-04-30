@@ -9,6 +9,8 @@ from google.appengine.ext import db
 
 from geotree.geotree import Point 
 
+from tipfy.appengine.auth.model import User
+
 class City(Point):
     """The City is derived from Point model in geotree.geotree
     Initially cities are loaded with bulkloader and not added to the GeoTree.
